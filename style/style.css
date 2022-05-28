@@ -1,0 +1,330 @@
+*{
+    box-sizing:border-box
+    
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    }
+
+.contenedor-principal{
+    background-color: #d5dd67;
+    position: relative;
+    
+}
+
+.titulo-principal{
+width: 100%;
+height: 15vh;
+display:flex;
+flex-direction:row;
+justify-content: center;
+align-items:center;
+font-size: 400%;
+color: #f87eff;
+font-family: 'Yellowtail','cursiva';
+
+
+}
+
+.nav-container{
+width: 30%;
+display:flex;
+flex-direction: row;
+justify-content:space-around;
+align-items: left;
+font-size:1.1rem;
+color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+}
+
+.productos{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content : center;
+    width: 10%;
+    height: 15%;
+    color: whitesmoke;
+    border-radius: 8%;
+    background-color: #f87eff;
+    text-align: center;
+position:absolute;
+left: 6px;
+top:50%;
+
+}
+
+.contactenos{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content : center;
+    width: 10%;
+    height: 10%;
+    color: whitesmoke;
+    border-radius: 8%;
+    background-color: #f87eff;
+    text-align: center;
+    position:absolute;
+    left: 6px;
+    top: 80%;
+
+}
+
+.seccion-2{
+    background-color: #faa2ff;
+    padding: 370px;
+    position:relative; 
+    
+    
+}
+
+.titulo-seccion2{
+    width: 100%;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    font-size: 300%;
+    color: #b6f8e8;
+    position:absolute;
+    left: 440px;
+    top: 0.5%;
+    font-family:'Anton', sans-serif;
+    }
+
+img{
+    width:100%;
+    
+    }
+    
+
+.Cosmeticos{
+
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    right: 1010px;
+    top: 20%;
+    
+}
+
+.vestidos{
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    left: 362px;
+    top: 20%;
+
+}
+
+.faldas{
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    left: 685px;
+    top: 20%;
+}
+
+.zapatos{
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    left: 1010px;
+    top: 20%;
+        
+}
+
+.pantalones{
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    left: 200px;
+    top: 62%;
+            
+}
+.blusas{
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    left: 525px;
+    top: 62%;
+                
+}
+
+.Ropa-interior{
+    width: 20%;
+    height: 42vh;
+    position:absolute;
+    left: 850px;
+    top: 62%;
+}
+
+.Fondo-seccion3{
+    background-color: #3fd7df;
+}
+
+.Fondo-seccion3{
+width: 100%;
+height: 100vh;
+justify-content: right;
+margin: 0;
+}
+
+_______________________________
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    }
+    
+    form {
+    background: #3fd7df;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 #3fd7df;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    }
+    
+    
+    form.grupo{
+    position: relative;
+    margin: 45px;
+    
+    }
+    
+    input{
+    background: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px, 10px, 10px, 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(-- colorTextos);
+    
+    }
+    
+    input:focus{
+    
+    outline: none;
+    color: #5e5d5d;
+    
+    }
+    
+    label{
+    color: var(--colorTextos);
+    font-size:16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top:10 px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+      
+    }
+    
+    input:focus label
+    input:valid label{
+    top: -14px;
+    font-size: 12px;
+    color: #faa2ff
+    
+    }
+    
+    .barra{
+    position: relative;
+    display: block;
+    width: 100%
+    
+    }
+    
+    .barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #f87eff, #3fd7df);
+    transition: 0.3s ease width;
+    left: 0;
+    
+    }
+    
+    input:focus.barra::before{
+    width: 100%;
+    
+    }
+    
+    button{
+    font-family: 'roboto';
+    background: #f87eff;
+    background: - webkit-linear-gradiente(to right, #f87eff, #3fd7df);
+    background: linear-graident(to right, #f87eff, #3fd7df);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    }
+    
+    @media screen and (max-width:768px){
+        .titulo-principal{
+            width: 50%;
+            height: 15vh;
+            display: flow-root;
+            justify-content: left;
+            align-items:left;
+            font-size: 200%;
+            color: #7e8bff;
+    
+        }
+    }
+
+    @media all and (min-width:480px){
+        .contenedor-principal{
+            background-color: #17dbe8;
+            position: relative;
+        }
+
+    }
+
+    @media all and (max-width:1024px){
+        .seccion-2{
+            background-color: #ffd7a2;
+            padding: 250px;
+            min-width: min-content;
+
+        }
+
+        .titulo-seccion2{
+            width: 50%;
+            height: 15vh;
+            display: flow-root;
+            justify-content: left;
+            align-items:left;
+            font-size: 200%;
+            color: #7e8bff;
+            font-family: 'Yellowtail','cursiva';
+
+    }
+}
+
+    
+        
+
+   
+
+
+
+    
